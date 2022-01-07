@@ -25,7 +25,7 @@ class InMemoryItemModelAttribute implements ItemModelAttribute {
 	InMemoryItemModelAttribute(String key, Object value) {
 		this.key = key;
 		this.value = value;
-		this.originalValue = value == null ? UNSET : null;
+		this.originalValue = value == null ? UNSET : value;
 	}
 
 	@Override
